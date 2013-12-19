@@ -150,7 +150,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\RoleController.cs" />
     <Compile Include="Controllers\SignOutController.cs" />
+    <Compile Include="Controllers\TaskTrackerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -163,6 +165,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\ACL.xml" />
+    <Content Include="App_Data\Roles.xml" />
+    <Content Include="App_Data\Tasks.xml" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -267,9 +272,7 @@
     <None Include="readme.txt" />
     <Content Include="Views\SignOut\SignOut.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\WindowsAzure.AD.Graph.2013_04_05\Microsoft.WindowsAzure.ActiveDirectory.GraphHelper.csproj">
       <Project>{56364c2f-dcf4-4d98-8ff7-72e98f0b7e86}</Project>
