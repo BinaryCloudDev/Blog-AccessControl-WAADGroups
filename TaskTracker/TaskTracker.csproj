@@ -156,6 +156,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="GraphClaimsAuthenticationManager.cs" />
     <Compile Include="Helpers\GraphServiceHelper.cs" />
     <Compile Include="Helpers\WebRetryHelper.cs" />
     <Compile Include="Helpers\XmlHelper.cs" />
@@ -274,6 +275,7 @@
     <Content Include="Views\Home\Users.cshtml" />
     <Content Include="Views\TaskTracker\TaskTracker.cshtml" />
     <Content Include="Views\Role\Roles.cshtml" />
+    <Content Include="Views\Role\RoleMappings.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
