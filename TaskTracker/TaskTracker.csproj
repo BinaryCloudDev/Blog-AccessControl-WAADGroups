@@ -154,6 +154,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\GraphServiceHelper.cs" />
+    <Compile Include="Helpers\WebRetryHelper.cs" />
+    <Compile Include="Helpers\XmlHelper.cs" />
+    <Compile Include="Models\ACLElem.cs" />
+    <Compile Include="Models\RoleMapElem.cs" />
+    <Compile Include="Models\TaskElem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -263,7 +269,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WindowsAzure.AD.Graph.2013_04_05\Microsoft.WindowsAzure.ActiveDirectory.GraphHelper.csproj">
+      <Project>{56364c2f-dcf4-4d98-8ff7-72e98f0b7e86}</Project>
+      <Name>Microsoft.WindowsAzure.ActiveDirectory.GraphHelper</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
