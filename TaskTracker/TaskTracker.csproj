@@ -271,6 +271,9 @@
     <Content Include="packages.config" />
     <None Include="readme.txt" />
     <Content Include="Views\SignOut\SignOut.cshtml" />
+    <Content Include="Views\Home\Users.cshtml" />
+    <Content Include="Views\TaskTracker\TaskTracker.cshtml" />
+    <Content Include="Views\Role\Roles.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

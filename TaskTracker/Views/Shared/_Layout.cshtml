@@ -31,6 +31,16 @@
                         <li>@Html.ActionLink("Home", "Index", "Home")</li>
                         <li>@Html.ActionLink("About", "About", "Home")</li>
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Users", "Users", "Home")</li>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li>@Html.ActionLink("RoleMappings", "RoleMappings", "Role")</li>
+                        }
+                        @if (User.IsInRole("Admin") || User.IsInRole("Observer") || User.IsInRole("Writer") || User.IsInRole("Approver"))
+                        {
+                            <li>@Html.ActionLink("MyRoles", "Roles", "Role")</li>
+                            <li>@Html.ActionLink("TaskTracker", "TaskTracker", "TaskTracker")</li>
+                        }
                     </ul>
                 </nav>
             </div>
